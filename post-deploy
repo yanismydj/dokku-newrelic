@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+echo "Notifying New Relic of deployment"
 set -eo pipefail; [[ $DOKKU_TRACE ]] && set -x
 APP=$1;
 

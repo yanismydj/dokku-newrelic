@@ -10,7 +10,7 @@ if [[ -f "$DOKKU_ROOT/$APP/NEW_RELIC" ]]; then
 
     key=${line%*=*}
     val=${line##*=}
-
+    echo "setting $key to $val"
     if [[ ! -z "$val" ]]; then
       case $key in
         api_key)
